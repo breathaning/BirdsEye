@@ -52,6 +52,9 @@ RUN wget -P /tmp https://storage.googleapis.com/flutter_infra_release/releases/s
 # Flutterのパスを設定
 ENV PATH=${FLUTTER_ROOT}/bin:$PATH
 
+RUN apt-get update
+RUN apt install -y cmake clang ninja-build pkg-config libgtk-3-dev mesa-utils
+
 # 不要なファイルを削除
 RUN rm -rf /tmp/*
 # 各種ディレクトリの所有者を開発者ユーザーに変更
