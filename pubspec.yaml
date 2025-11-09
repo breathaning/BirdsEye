@@ -12,7 +12,7 @@ dependencies:
     sdk: flutter
   flutter_svg: any
   flutter_swipe_action_cell: ^3.1.2
-  go_router: ^16.0.0
+  go_router: ^17.0.0
   http: any
   localstore: ^1.3.5
   markdown_widget: any

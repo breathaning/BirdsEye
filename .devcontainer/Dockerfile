@@ -46,8 +46,8 @@ ENV HOME=/home/developer
 ENV FLUTTER_ROOT=/opt/flutter
 
 # Flutter SDK のダウンロードと展開
-RUN wget -P /tmp https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.4-stable.tar.xz && \
-    tar -xf /tmp/flutter_linux_3.24.4-stable.tar.xz -C /opt/
+RUN wget -P /tmp https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.35.7-stable.tar.xz && \
+    tar -xf /tmp/flutter_linux_3.35.7-stable.tar.xz -C /opt/
 
 # Flutterのパスを設定
 ENV PATH=${FLUTTER_ROOT}/bin:$PATH
